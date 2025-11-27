@@ -47,6 +47,11 @@
 
 ## 🎥 Demo
 
+### 📹 Video Demo
+**[Watch Full Demo Video →](YOUR_YOUTUBE_LINK_HERE)**
+
+See the complete platform in action: authentication, document upload, real-time processing, structured extraction, and history management.
+
 ### Live Processing Flow
 1. **Upload** → PDF, PNG, JPG, JPEG documents (up to 10MB)
 2. **AI Classification** → Document type detection (invoice/receipt/PO)
@@ -584,3 +589,4 @@ For issues and questions:
 Made with ❤️ using AI and modern cloud technologies
 
 </div>
+# intelligent-document-processor
