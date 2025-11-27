@@ -528,12 +528,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support
-
-For issues and questions:
-- 🐛 **Bug Reports**: [GitHub Issues](https://github.com/yourusername/docuai/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/docuai/discussions)
-- 📧 **Email**: your.email@example.com
 
 ---
 
@@ -541,7 +535,7 @@ For issues and questions:
 
 **⭐ Star this repository if you find it helpful!**
 
-Made with ❤️ using AI and modern cloud technologies
+
 
 </div>
 # intelligent-document-processor
