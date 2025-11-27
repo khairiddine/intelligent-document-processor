@@ -1,0 +1,59 @@
+{
+  "document_id": "PO-20231102-001",
+  "document_type": "purchase_order",
+  "upload_timestamp": "2023-10-31T23:59:59",
+  "file_name": "purchase_order_INT-001.pdf",
+  "file_size_bytes": 20475,
+  "processing_status": "completed",
+  "confidence_score": 0.9,
+  "extracted_at": "2023-10-31T23:59:59",
+  "po_number": "INT-001",
+  "po_date": "2019-11-02T00:00:00",
+  "delivery_date": null,
+  "buyer": {
+    "name": "Jessie M Home",
+    "address": "Oak Drive\nNY",
+    "tax_id": "1234567890",
+    "email": null,
+    "phone": null
+  },
+  "supplier": {
+    "name": "Jessie M Home",
+    "address": "4312 Wood Road\nNew York, NY 10031",
+    "tax_id": null,
+    "email": null,
+    "phone": null
+  },
+  "items": [
+    {
+      "description": "Front and rear brake cables",
+      "quantity": 1.0,
+      "unit_price": 100.0,
+      "total": 100.0,
+      "tax_rate": null
+    },
+    {
+      "description": "New set of pedal arms",
+      "quantity": 1.0,
+      "unit_price": 25.0,
+      "total": 50.0,
+      "tax_rate": null
+    },
+    {
+      "description": "Labor 3hrs",
+      "quantity": 1.0,
+      "unit_price": 15.0,
+      "total": 45.0,
+      "tax_rate": null
+    }
+  ],
+  "subtotal": 195.0,
+  "tax_amount": 9.75,
+  "shipping_cost": 0.0,
+  "total_amount": 204.75,
+  "currency": "USD",
+  "shipping_address": "2019 Redbud Drive\nNew York, NY 10011",
+  "billing_address": null,
+  "terms_and_conditions": null,
+  "status": "pending"
+}

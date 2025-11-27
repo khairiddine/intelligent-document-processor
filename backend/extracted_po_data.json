@@ -1,0 +1,290 @@
+{
+  "po_number": 1,
+  "doc_type": "invoice",
+  "fields": {
+    "CustomerAddress": {
+      "value": "Oak Drive\nNY",
+      "confidence": 0.347,
+      "type": null
+    },
+    "CustomerId": {
+      "value": "1234567890",
+      "confidence": 0.565,
+      "type": null
+    },
+    "CustomerName": {
+      "value": "Jessie M Home",
+      "confidence": 0.93,
+      "type": null
+    },
+    "InvoiceDate": {
+      "value": "11/02/2019",
+      "confidence": 0.865,
+      "type": null
+    },
+    "InvoiceTotal": {
+      "value": "$204.75",
+      "confidence": 0.644,
+      "type": null
+    },
+    "Items": {
+      "value": null,
+      "confidence": null,
+      "type": null
+    },
+    "OrderNumber": {
+      "value": "INT-001",
+      "confidence": 0.414,
+      "type": null
+    },
+    "PurchaseOrder": {
+      "value": "INT-001",
+      "confidence": 0.414,
+      "type": null
+    },
+    "ShippingAddress": {
+      "value": "2019 Redbud Drive\nNew York, NY 10011",
+      "confidence": 0.915,
+      "type": null
+    },
+    "ShippingAddressRecipient": {
+      "value": "Jessie M Home",
+      "confidence": 0.93,
+      "type": null
+    },
+    "SubTotal": {
+      "value": "195.00",
+      "confidence": 0.97,
+      "type": null
+    },
+    "TaxDetails": {
+      "value": null,
+      "confidence": null,
+      "type": null
+    },
+    "TotalTax": {
+      "value": "9.75",
+      "confidence": 0.971,
+      "type": null
+    },
+    "VendorAddress": {
+      "value": "4312 Wood Road\nNew York, NY 10031",
+      "confidence": 0.889,
+      "type": null
+    },
+    "VendorAddressRecipient": {
+      "value": "Jessie M Home",
+      "confidence": 0.928,
+      "type": null
+    },
+    "VendorName": {
+      "value": "Jessie M Home",
+      "confidence": 0.928,
+      "type": null
+    }
+  },
+  "items": [
+    {
+      "Description": {
+        "value": "Jessie M Home",
+        "confidence": 0.9
+      },
+      "Quantity": {
+        "value": "1",
+        "confidence": 0.9
+      },
+      "UnitPrice": {
+        "value": "0",
+        "confidence": 0.9
+      },
+      "Amount": {
+        "value": "0",
+        "confidence": 0.9
+      }
+    },
+    {
+      "Description": {
+        "value": "4312 Wood Road",
+        "confidence": 0.9
+      },
+      "Quantity": {
+        "value": "1",
+        "confidence": 0.9
+      },
+      "UnitPrice": {
+        "value": "0",
+        "confidence": 0.9
+      },
+      "Amount": {
+        "value": "0",
+        "confidence": 0.9
+      }
+    },
+    {
+      "Description": {
+        "value": "New York, NY 10031",
+        "confidence": 0.9
+      },
+      "Quantity": {
+        "value": "1",
+        "confidence": 0.9
+      },
+      "UnitPrice": {
+        "value": "0",
+        "confidence": 0.9
+      },
+      "Amount": {
+        "value": "0",
+        "confidence": 0.9
+      }
+    },
+    {
+      "Description": {
+        "value": "Front and rear brake cables",
+        "confidence": 0.9
+      },
+      "Quantity": {
+        "value": "1",
+        "confidence": 0.9
+      },
+      "UnitPrice": {
+        "value": "100.00",
+        "confidence": 0.9
+      },
+      "Amount": {
+        "value": "100.00",
+        "confidence": 0.9
+      }
+    },
+    {
+      "Description": {
+        "value": "New set of pedal arms",
+        "confidence": 0.9
+      },
+      "Quantity": {
+        "value": "1",
+        "confidence": 0.9
+      },
+      "UnitPrice": {
+        "value": "25.00",
+        "confidence": 0.9
+      },
+      "Amount": {
+        "value": "50.00",
+        "confidence": 0.9
+      }
+    },
+    {
+      "Description": {
+        "value": "Labor 3hrs",
+        "confidence": 0.9
+      },
+      "Quantity": {
+        "value": "1",
+        "confidence": 0.9
+      },
+      "UnitPrice": {
+        "value": "15.00",
+        "confidence": 0.9
+      },
+      "Amount": {
+        "value": "45.00",
+        "confidence": 0.9
+      }
+    },
+    {
+      "Description": {
+        "value": "Sales Tax 5.0%",
+        "confidence": 0.9
+      },
+      "Quantity": {
+        "value": "1",
+        "confidence": 0.9
+      },
+      "UnitPrice": {
+        "value": "0",
+        "confidence": 0.9
+      },
+      "Amount": {
+        "value": "0",
+        "confidence": 0.9
+      }
+    }
+  ],
+  "tables": [
+    {
+      "row_count": 4,
+      "column_count": 4,
+      "cells": [
+        [
+          "VENDOR",
+          "SHIP TO",
+          "ORDER \u20a6",
+          "INT-001"
+        ],
+        [
+          "Jessie M Home",
+          "Jessie M Home",
+          "ORDER DATE",
+          "11/02/2019"
+        ],
+        [
+          "4312 Wood Road",
+          "2019 Redbud Drive",
+          "",
+          ""
+        ],
+        [
+          "New York, NY 10031",
+          "New York, NY 10011",
+          "",
+          ""
+        ]
+      ]
+    },
+    {
+      "row_count": 4,
+      "column_count": 4,
+      "cells": [
+        [
+          "QTY",
+          "DESCRIPTION",
+          "UNIT PRICE",
+          "AMOUNT"
+        ],
+        [
+          "1",
+          "Front and rear brake cables",
+          "100.00",
+          "100.00"
+        ],
+        [
+          "2",
+          "New set of pedal arms",
+          "25.00",
+          "50.00"
+        ],
+        [
+          "3",
+          "Labor 3hrs",
+          "15.00",
+          "45.00"
+        ]
+      ]
+    },
+    {
+      "row_count": 2,
+      "column_count": 2,
+      "cells": [
+        [
+          "Subtotal",
+          "195.00"
+        ],
+        [
+          "Sales Tax 5.0%",
+          "9.75"
+        ]
+      ]
+    }
+  ]
+}

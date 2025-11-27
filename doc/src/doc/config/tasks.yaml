@@ -1,0 +1,97 @@
+classification_task:
+  description: >
+   "Analyze the uploaded document and classify its type.
+    Document path: {document_path}
+    
+    Use the classify_document tool to examine the structure and content to determine if it's an:
+    - Invoice
+    - Receipt 
+    - Purchase Order
+    - Unknown document type
+
+    Return the document type classification with confidence score.
+  expected_output: >
+    "Document type classification" in JSON format:
+     {{
+      "document_id": "uuid-string",
+      "document_type": "invoice" | "receipt" | "purchase_order" | "unknown",
+      "upload_timestamp": "ISO 8601 datetime string",
+      "file_name": "string",
+      "file_size_bytes": integer,
+      "processing_status": "classified",
+      "confidence_score": float between 0.0 and 1.0,
+      "extracted_at": null
+    }}
+  agent: manager
+
+invoice_processing_task:
+  description: >
+    CRITICAL DECISION STEP:
+    
+    First, check the classification result from the previous task.
+    Look for the "document_type" field in the classification output.
+    
+    IF document_type == "invoice":
+      - Use the process_invoice tool with document path: {document_path}
+      - Return the complete extracted invoice JSON data
+    
+    IF document_type != "invoice":
+      - Return exactly: "SKIPPED_NO_OUTPUT"
+      - Do NOT call any tools
+      - Do NOT process the document
+    
+    You are the Invoice Processing Specialist. Only process invoices.
+  expected_output: >
+    If invoice: Complete Invoice JSON with vendor, customer, items, totals, dates
+    If not invoice: "SKIPPED_NO_OUTPUT"
+  agent: processing_invoice
+  context: 
+    - classification_task
+
+receipt_processing_task:
+  description: >
+    CRITICAL DECISION STEP:
+    
+    First, check the classification result from the previous task.
+    Look for the "document_type" field in the classification output.
+    
+    IF document_type == "receipt":
+      - Use the process_receipt tool with document path: {document_path}
+      - Return the complete extracted receipt JSON data
+    
+    IF document_type != "receipt":
+      - Return exactly: "SKIPPED_NO_OUTPUT"
+      - Do NOT call any tools
+      - Do NOT process the document
+    
+    You are the Receipt Processing Specialist. Only process receipts.
+  expected_output: >
+    If receipt: Complete Receipt JSON with merchant, items, total, payment details
+    If not receipt: "SKIPPED_NO_OUTPUT"
+  agent: processing_receipt
+  context: 
+    - classification_task
+
+purchase_order_processing_task:
+  description: >
+    CRITICAL DECISION STEP:
+    
+    First, check the classification result from the previous task.
+    Look for the "document_type" field in the classification output.
+    
+    IF document_type == "purchase_order":
+      - Use the process_purchase_order tool with document path: {document_path}
+      - Return the complete extracted purchase order JSON data
+    
+    IF document_type != "purchase_order":
+      - Return exactly: "SKIPPED_NO_OUTPUT"
+      - Do NOT call any tools
+      - Do NOT process the document
+    
+    You are the Purchase Order Processing Specialist. Only process purchase orders.
+  expected_output: >
+    If purchase order: Complete PurchaseOrder JSON with supplier, buyer, items, totals
+    If not purchase order: "SKIPPED_NO_OUTPUT"
+  agent: processing_purchase_order
+  context: 
+    - classification_task
