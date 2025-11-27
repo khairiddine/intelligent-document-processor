@@ -22,7 +22,6 @@
 - [Usage](#-usage)
 - [API Documentation](#-api-documentation)
 - [Project Structure](#-project-structure)
-- [Deployment](#-deployment)
 - [Performance](#-performance)
 - [Screenshots](#-screenshots)
 - [Contributing](#-contributing)
@@ -48,7 +47,7 @@
 ## 🎥 Demo
 
 ### 📹 Video Demo
-**[Watch Full Demo Video →](YOUR_YOUTUBE_LINK_HERE)**
+**[🎬 Watch Full Demo Video on Loom →](https://www.loom.com/share/e3d2f4d09ab742b582ca3f7463500b85)**
 
 See the complete platform in action: authentication, document upload, real-time processing, structured extraction, and history management.
 
@@ -251,14 +250,6 @@ pip install -r requirements.txt
 # File: backend/database_schema.sql
 ```
 
-### Option 2: Docker (Recommended for Production)
-
-```bash
-# Coming soon - Docker Compose setup
-docker-compose up
-```
-
----
 
 ## ⚙️ Configuration
 
@@ -460,54 +451,13 @@ projet2/
 
 ---
 
-## 🌐 Deployment
-
-### Deployment Options
-
-#### 1. Railway (Recommended)
-```bash
-# Easy deployment with auto-scaling
-# Connect GitHub repo
-# Set environment variables
-# Deploy with one click
-```
-
-#### 2. Render
-```bash
-# Free tier available
-# Docker support
-# Auto-deploy from Git
-```
-
-#### 3. AWS ECS/Fargate
-```bash
-# Enterprise-grade
-# Full control
-# Scalable
-```
-
-#### 4. Azure Container Apps
-```bash
-# Native Azure integration
-# Best for Azure OpenAI users
-# Auto-scaling
-```
-
-### Environment Configuration
-- Set all environment variables in deployment platform
-- Use production Supabase instance
-- Configure CORS for production domain
-- Enable HTTPS
-
----
-
 ## 📊 Performance
 
 ### Metrics
 - ⚡ **Processing Speed**: 30-40 seconds per document
 - 🎯 **Accuracy**: 98%+ with Azure Document Intelligence
 - 📈 **Throughput**: Async processing (scalable)
-- 🔒 **Uptime**: 99.9% (Supabase + Azure)
+- 🔒 **Uptime**: 97.9% (Supabase + Azure)
 - 💾 **Storage**: Unlimited (Supabase Storage)
 
 ### Optimization
@@ -520,17 +470,25 @@ projet2/
 
 ## 📸 Screenshots
 
-### Login Page
-Professional authentication interface with gradient design
+### 🔐 Login & Authentication
+![Login Page](streamlit-app/images/Capture%20d'écran%202025-11-27%20131227.png)
+*Professional authentication interface with gradient design and secure login*
 
-### Upload & Processing
-Real-time progress tracking with AI agent feedback
+### 📤 Document Upload
+![Upload Interface](streamlit-app/images/Capture%20d'écran%202025-11-27%20131242.png)
+*Intuitive drag-and-drop interface for document upload*
 
-### Extraction Results
-Beautiful cards displaying all extracted data
+### ⚙️ Real-time Processing
+![Processing View](streamlit-app/images/Capture%20d'écran%202025-11-27%20131320.png)
+*Live AI agent processing with progress tracking*
 
-### Document History
-Dashboard showing all processed documents with search
+### 📊 Extraction Results
+![Results Display](streamlit-app/images/Capture%20d'écran%202025-11-27%20131329.png)
+*Beautiful cards displaying structured extracted data*
+
+### 📚 Document History
+![History Dashboard](streamlit-app/images/Capture%20d'écran%202025-11-27%20131345.png)
+*Comprehensive dashboard with all processed documents*
 
 ---
 
